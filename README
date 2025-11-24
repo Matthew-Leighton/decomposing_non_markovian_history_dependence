@@ -1,2 +1,14 @@
 README
 
+
+Code to replicate the data analysis and figures on fly behavior data in the manuscript "Decomposing non-Markovian History Dependence" by Matthew P. Leighton and Christopher W. Lynn.
+
+Repository contains the following folders:
+
+binarized_data: This contains a .npz file for each fly in the dataset with time series data of binarized behavior states.
+
+code_for_data_processing: process_to_binarized.py takes 9-state time-series data and binarizes it. Other scripts then compute the "word" distribution of varying-length binary sequences at different coarse-grainings, and for shuffled time series data.
+
+code_for_entropy_info_calcs: This code calculates conditional entropy, dynamical information, and autocorrelations for binarized behavior data with different coarse-graining factors. Additional code performs finite-data corrections and comparisons with shuffled information, and makes some diagnostic plots.
+
+code_for_figure_generation: Each script generates one of the figures in the paper.
